@@ -38,4 +38,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: pyside6-demo
-          path: dist\pyside6-demo.7z
+          path: dist
