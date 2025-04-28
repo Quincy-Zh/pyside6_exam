@@ -1,10 +1,8 @@
-name: Build Python Executable
+# 手动在 Actions 页面启动构建
+name: Manual workflow
 
 on:
-  # 可根据需求修改触发条件，这里设置为推送到 main 分支时触发
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -19,7 +17,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2
         with:
-          python-version: '3.12'  # 可根据项目需求修改 Python 版本
+          python-version: '3.12'
 
       # 安装依赖
       - name: Install dependencies
@@ -39,3 +37,4 @@ jobs:
         with:
           name: pyside6-demo
           path: dist
+          retention-days: 5  # 保留 5 天
