@@ -2,4 +2,4 @@
 
 pyinstaller -y -w -n pyside6-demo .\main.py
 
-7z a -t7z .\dist\pyside6-demo.7z .\dist\main\*
+7z a -t7z .\dist\pyside6-demo.7z .\dist\pyside6-demo\*
