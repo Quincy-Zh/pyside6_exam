@@ -34,8 +34,8 @@ jobs:
         shell: cmd
 
       # 上传构建结果作为工件
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: my-app
-          path: dist/pyside6-demo.7z
+      #- name: Upload artifact
+      #  uses: actions/upload-artifact@v2
+      #  with:
+      #    name: my-app
+      #    path: dist/pyside6-demo.7z
